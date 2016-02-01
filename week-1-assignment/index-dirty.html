@@ -1,0 +1,55 @@
+<!doctype html>
+
+<head>
+	<title>Dirty</title>
+	<style>
+		div {
+			color: black;
+			font-family: courier;
+			font-size: 40px;
+			margin: 20px;
+			padding: 20px;
+		} 
+
+		.first-div {
+			background-color: #CC9900;
+		}
+
+		.first-div:hover {
+			text-align: right;
+		}
+
+		.first-div:active {
+			background-color: #999933;
+			font-family: comic;
+		}
+
+		.second-div {
+			text-align: right;
+		}
+
+		.big{
+			color: #CC9900;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="first-div"> 
+a quart of phlegm
+even gourd water
+	</div>
+
+	<div class="second-div"> 
+couldn't mop it up
+	</div>
+	
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script>
+    $('.second-div').click(function () {
+      $(this).toggleClass('big');
+    });
+  </script>
+</body>

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<head>
+	<title>Day</title>
+	<style>
+		div {
+			color: black;
+			font-family: Futura;
+			font-size: 70px;
+			margin: 20px;
+			padding: 20px;
+		} 
+
+		.first-div {
+			background-color: orange;
+		}
+
+		.first-div:hover {
+			color: white;
+		}
+
+		.first-div:active {
+			padding: 50px;
+		}
+
+		.big{
+			letter-spacing: 25px
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="first-div"> 
+the tree cut,
+dawn breaks early
+at my little window
+		</div>
+	
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script>
+    $('.first-div').click(function () {
+      $(this).toggleClass('big');
+    });
+  </script>
+</body>

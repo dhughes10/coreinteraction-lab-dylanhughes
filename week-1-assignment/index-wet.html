@@ -1,0 +1,56 @@
+<!doctype html>
+
+<head>
+	<title>Wet</title>
+	<style>
+		div {
+			color: black;
+			font-family: Helvetica;
+			font-size: 70px;
+			font-style: bold;
+			margin: 40px;
+			padding: 20px;
+		} 
+
+		.first-div {
+			background-color: blue;
+		}
+
+		.first-div:active {
+			background-color: gray;
+		}
+
+		.first-div:hover {
+			color: white;
+		}
+
+		.second-div:hover {
+			color: white;
+		}
+
+		.big{
+			text-decoration: line-through;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="first-div"> 
+spring rain:
+
+		</div>
+
+		<div class="second-div"> 
+browsing under an umbrella
+at the picture-book store
+		</div>
+	
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script>
+    $('.second-div').click(function () {
+      $(this).toggleClass('big');
+    });
+  </script>
+</body>

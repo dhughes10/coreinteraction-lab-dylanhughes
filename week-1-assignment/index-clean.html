@@ -1,0 +1,63 @@
+<!doctype html>
+
+<head>
+	<title>Clean</title>
+	<style>
+		div {
+			color: black;
+			font-family: Helvetica;
+			font-size: 50px;
+			margin: 40px;
+			padding: 40px;
+			text-align: center;
+		} 
+
+		.first-div:hover {
+			font-style: italic;
+
+		}
+
+		.second-div:active {
+			color: white;
+			background-color: blue;
+
+		}
+
+		.third-div:hover {
+			font-style: italic;
+		}
+
+
+		.big{
+			color: white;
+
+		}
+	</style>
+</head>
+
+<body>
+
+		<div class="first-div"> 
+the bucket's water
+poured out and gone,
+		</div>
+
+		<div class="second-div"> 
+drop by drop
+		</div>
+
+		<div class="third-div"> 
+dew drips like pearls
+from the autumn flowers
+		</div>
+	
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script>
+    $('.first-div').click(function () {
+      $(this).toggleClass('big');
+    });
+      $('.third-div').click(function () {
+      $(this).toggleClass('big');
+    });
+  </script>
+</body>
