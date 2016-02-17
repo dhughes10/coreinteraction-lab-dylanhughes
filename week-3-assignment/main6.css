@@ -1,0 +1,46 @@
+.pink {
+	position: relative;
+	display: inline-block;
+	background-color: #e8a39f;
+	width: 50%;
+	height: 600px;
+	margin-right: -4px;
+}
+
+.light {
+	background-color: #f4bcd6;
+}
+
+.yellow-square {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-color: #fed100;
+	left: 50%;
+	top: 300px;
+	margin-left: -150px;
+	margin-top: -150px;
+	z-index: 1
+}
+
+.blue-rectangle {
+	position: relative;
+	display: inline-block;
+	background-color: #4b7fe8;
+	width: 100%;
+	height: 600px;
+	margin-top: -6px;
+}
+
+.circle {
+	position: relative;
+	display: inline-block;
+	background-color: #fed100;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 10px;
+	left: 44%;
+	top: 48%;
+	z-index: 2;
+}
