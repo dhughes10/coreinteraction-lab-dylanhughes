@@ -1,14 +1,11 @@
-.canvas {
-	width: 1280px;
-	height: auto;
-}
-
 .rectangle {
-	position: relative;
+	position: fixed;
 	width: 295px;
 	height: 700px;
 	background-color: #f68294;
-	left: 88%;
+	right: 0px;
+	top: 0px;
+	bottom: 0px; 
 }
 
 .blue-bars {
