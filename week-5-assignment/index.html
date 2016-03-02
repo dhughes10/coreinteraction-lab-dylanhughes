@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="outer-container">Lord of the Rings
+    <div class="flex-container">
+      <div class="column"><img src="assets/eisengard.gif"><a href="assets/mordor.gif"><img src="assets/mordor.gif"><img src="assets/gandolf.gif"></a><img src="assets/lotr_0004_rohanarmy.jpg">
+      </div>
+      <div class="column"><img src="assets/lotr_0000_gondor.jpg"><img src="assets/lotr_0001_ghosts.jpg"><img src="assets/rivendel.gif"><img src="assets/treezoom.gif">
+      </div>
+      <div class="column"><img src="assets/end.gif"><img src="assets/lotr_0002_helmsdeep.jpg"><img src="assets/lotr_0003_hobbits.jpg"><img src="assets/volcano.gif">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="/path/to/masonry.pkgd.min.js"></script>
+
+<script>
+$('.flex-container').masonry({
+  itemSelector: '.column',
+  columnWidth: 200
+});
+</script>

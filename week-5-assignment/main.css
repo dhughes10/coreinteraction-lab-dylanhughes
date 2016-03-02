@@ -1,0 +1,36 @@
+.outer-container {
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  position: relative;
+  padding: 25px;
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 32.5%;
+  margin-left: 11px;
+  align-item: center;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
