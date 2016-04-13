@@ -73,9 +73,13 @@
 // console.log(testArray);
 
 //number 7
-function listProps(testArray){
+function listProps (argObject) {
+  for (var key in argObject) {
+    console.log(key);
+  }
+}
 
-	}
+listProps({ a: 1, b: 2 });
 
 
 </script>

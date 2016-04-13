@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<style>
+    body {
+      color: black;
+      font-family: Helvetica;
+      font-size: 50px;
+      margin: 40px;
+      padding: 40px;
+      text-align: center;
+    } 
+
+    .first-div:hover {
+      font-style: italic;
+    }
+
+    .second-div:active {
+      color: white;
+      background-color: blue;
+    }
+
+    .third-div:hover {
+      font-style: italic;
+    }
+
+    .button1 {
+      color: red;
+    }
+
+    .button2 {
+      color: red;
+    }
+
+    .button3 {
+      color: red;
+    }
+
+  </style>
+</head>
+
+<body>
+    <button class="button1" type="button">Change Style</button>
+    <button class="button2" type="button">Add New Element</button>
+    <button class="button3" onclick="myFunction()" type="button">Time Alert</button>
+
+    <div class="first-div"> 
+        the bucket's water
+        poured out and gone,
+    </div>
+
+    <div class="second-div"> 
+        drop by drop
+    </div>
+
+    <div class="third-div"> 
+        dew drips like pearls
+        from the autumn flowers
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+
+   $('.button1').click(function () { 
+      $('body').css("background-color", "green");
+      $('body').css("font-size", "100px");
+    });
+
+   $('.button2').click(function () {
+      $('body').append('<div>Adding Element...</div>');
+    });
+
+    function myFunction() {
+        setInterval(function(){ alert("Hello"); }, 1000);
+    }
+</script>
+
+
+
+
+
+
